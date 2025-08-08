@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Flashcards - 3D Human Organs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the flashcards */
+        .flashcards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .flashcard {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .flashcard:hover {
+            transform: translateY(-10px);
+        }
+
+        .flashcard .question {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .flashcard .answer {
+            font-size: 1em;
+            color: #495057;
+            display: none;
+        }
+
+        .flashcard.active .answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brain.html">Brain</a></li>
+                <li><a href="anatomy.html">Anatomy</a></li>
+                <li><a href="flashcards.html">FlashCards</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Brain Flashcards</h1>
+        <p>Click on a flashcard to reveal the answer!</p>
+
+        <div class="flashcards-container">
+            <div class="flashcard">
+                <div class="question">What is the function of the frontal lobe?</div>
+                <div class="answer">The frontal lobe controls decision-making, planning, problem-solving, and voluntary motor control. It is also associated with personality and speech production.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What does the parietal lobe process?</div>
+                <div class="answer">The parietal lobe processes sensory information such as touch, temperature, and pain. It helps with spatial awareness and coordination.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the role of the occipital lobe?</div>
+                <div class="answer">The occipital lobe is primarily responsible for visual processing, interpreting information like color, shape, and motion.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the function of the hypothalamus?</div>
+                <div class="answer">The hypothalamus regulates critical functions such as hunger, thirst, sleep, and emotional activity. It also controls the autonomic nervous system.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What does the amygdala do?</div>
+                <div class="answer">The amygdala is involved in emotional responses, memory processing, and decision-making. It plays a key role in fear and pleasure responses.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the function of the hippocampus?</div>
+                <div class="answer">The hippocampus is crucial for memory formation and spatial navigation. It helps convert short-term memories into long-term ones.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What does the temporal lobe process?</div>
+                <div class="answer">The temporal lobe processes auditory information, memory, and language comprehension. It contains the hippocampus and Wernicke’s area.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the primary role of the cerebellum?</div>
+                <div class="answer">The cerebellum is responsible for coordination, balance, and fine motor control. It also plays a role in cognitive functions and motor learning.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the function of the brainstem?</div>
+                <div class="answer">The brainstem controls vital functions like heart rate, breathing, and blood pressure. It also connects the brain to the spinal cord.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What role does the thalamus play in the brain?</div>
+                <div class="answer">The thalamus acts as a relay center, transmitting sensory and motor signals to the cerebral cortex and regulating sleep and alertness.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What does the limbic system regulate?</div>
+                <div class="answer">The limbic system regulates emotions, memory, and motivation. It includes structures like the hippocampus, amygdala, and cingulate gyrus.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the function of Broca’s area?</div>
+                <div class="answer">Broca’s area, located in the frontal lobe, is responsible for speech production and articulation.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What does Wernicke’s area control?</div>
+                <div class="answer">Wernicke’s area, located in the temporal lobe, is essential for language comprehension and processing.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the function of cerebrospinal fluid?</div>
+                <div class="answer">Cerebrospinal fluid cushions the brain and spinal cord, circulates nutrients, and removes waste products.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the corpus callosum?</div>
+                <div class="answer">The corpus callosum is a thick bundle of nerve fibers that connects the left and right hemispheres of the brain, facilitating communication between them.</div>
+            </div>
+            
+            <div class="flashcard">
+                <div class="question">What is the role of the medulla oblongata?</div>
+                <div class="answer">The medulla oblongata controls involuntary functions like breathing, heart rate, and digestion. It is part of the brainstem.</div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 3D Human Organs Interactive Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle flashcard answers
+        document.querySelectorAll('.flashcard').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

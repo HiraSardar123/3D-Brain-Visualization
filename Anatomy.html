@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain - 3D Human Organs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brain.html">Brain</a></li>
+                <li><a href="anatomy.html">Anatomy</a></li>
+                <li><a href="flashcards.html">FlashCards</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Brain Lobes Section -->
+        <section id="brain">
+            <h2>Brain Anatomy</h2>
+            <div class="content-container">
+                <div id="brain-c-model" class="model-container"></div>
+                <div class="info-container">
+                    <h3>Lobe Information</h3>
+                    <p id="lobe-info">Click on a lobe in the model to view its detailed information here.</p>
+                    <div class="lobe-selector">
+                        <button data-lobe="frontal">Frontal Lobe</button>
+                        <button data-lobe="parietal">Parietal Lobe</button>
+                        <button data-lobe="temporal">Temporal Lobe</button>
+                        <button data-lobe="occipital">Occipital Lobe</button>
+                        <button data-lobe="limbic">Limbic Lobe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internal Brain Anatomy Section -->
+        <section id="internal-brain">
+            <h2>Internal Brain Anatomy</h2>
+            <div class="content-container">
+                <div id="internal-structures-model" class="model-container"></div>
+                <div class="info-container">
+                    <h3>Structure Information</h3>
+                    <p id="structure-info">Click on a structure in the model to view its detailed information here.</p>
+                    <div class="structure-selector">
+                        <button data-structure="hypothalamus">Hypothalamus</button>
+                        <button data-structure="amygdala">Amygdala</button>
+                        <button data-structure="thalamus">Thalamus</button>
+                        <button data-structure="pituitary">Pituitary Gland</button>
+                        <button data-structure="ventricles">Ventricles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brainstem Section -->
+        <section id="brainstem">
+            <h2>Brainstem Anatomy</h2>
+            <div class="content-container">
+                <div id="brainstem-model" class="model-container"></div>
+                <div class="info-container">
+                    <h3>Brainstem Information</h3>
+                    <p id="brainstem-info">Click on a brainstem structure in the model to view its detailed information here.</p>
+                    <div class="stem-selector">
+                        <button data-structure="midbrain">Midbrain</button>
+                        <button data-structure="pons">Pons</button>
+                        <button data-structure="medulla">Medulla Oblongata</button>
+                        <button data-structure="superior">Superior Colliculus</button>
+                        <button data-structure="inferior">Inferior Colliculus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 3D Human Organs Interactive Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/controls/OrbitControls.js"></script>
+    <script src="Anatomy.js"></script>
+</body>
+</html>
+
+
+
+
