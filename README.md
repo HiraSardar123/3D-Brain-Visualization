@@ -75,8 +75,6 @@ This project is an interactive web application that allows users to explore 3D m
 - **Edit content**: Update the HTML or JS files for new information or features.
 
 ## Contributors
-- **Doctor Faisal Shafait** - Professor, National University of Sciences and Technology (NUST)
-- **Doctor Junaid Younas** - Assistant Professor, NUST
 - **Hira Sardar** - Student, NUST
 
 ## License
