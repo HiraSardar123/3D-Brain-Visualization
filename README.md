@@ -67,7 +67,7 @@ This project is an interactive web application that allows users to explore 3D m
 ## 3D Models
 - `.glb` and `.fbx` files are used for 3D rendering. These are loaded dynamically using Three.js and GLTFLoader.
 - Example models: `final-model.glb`, `braincomp.glb`, `brainlobes.glb`, `brainstem.glb`, `internal-brain.glb`.
-- The .glb files can be obtained by contacting at "sardarhira70@gmail.com".
+- The .glb files can be obtained by contacting at "sardarhira70@gmail.com". The models are present here in .rar form as well.
 
 ## Customization
 - **Add new organs**: Create new HTML/JS files following the pattern of `heart.html`/`heart.js` or `lungs.html`/`lungs.js`.
